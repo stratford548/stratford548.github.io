@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Portfolio Gallery
+    </title>
+
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1">
+
+
+</head>
+
+<body>
+<style>
+    * {
+    box-sizing: border-box;
+}
+
+/* padding for whole body */
+body {
+    padding: 15px;
+background-color: #c1b8b6;
+  font-family: Lucida Console;
+}
+
+/* styling body */
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    color: white;
+font-size: 50px;
+  word-break: break-all;
+  text-align: center;
+}
+
+/* anchor tag decoration */
+a {
+    text-decoration: none;
+    color: #5673C8;
+}
+
+a:hover {
+    color: lightblue;
+}
+
+/* paragraph tag decoration */
+p {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+}
+
+/* row and column decoration */
+.gallery {
+     display: grid;
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+     gap: 10px;
+     padding: 20px;
+ 
+ }
+
+.gallery-item {
+     overflow: hidden;
+background-color: white;
+border: 1px solid gray;
+ }
+
+ .gallery-item img {
+     width: 100%;
+     height: 100%;
+     display: block;
+ }
+
+.gallery-item:hover {
+    box-shadow: 0 14px 8px rgba(0, 0, 0, 0.5); /* Add box shadow on hover */
+}
+
+/* content decoration */
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+.title {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 15%;
+    background-color: black;
+}
+
+
+</style>
+    <!-- title and tag -->
+<div class="title"><h1>Portfolio Gallery</h1></div>
+    <div class="container">
+        
+       
+        <hr>
+
+        <!-- Content of the body-->
+        <h2>My Projects</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="content">
+                    <img src=
+"https://www.trafalgar.com/real-word/wp-content/uploads/sites/3/2016/01/Jazz_iStock_www.istockphoto.jpg" 
+                         alt="">
+                    <h3>
+                        <a href="musicstore.html">Music Store</a>
+                    </h3>
+                    <p>
+                     
+                        A sample homepage for a band, including audio. 
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="content">
+                    <img src="beach.jpg" 
+                         alt="">
+                    <h3>
+                        <a href="photopage.html">Photo Gallery</a>
+                    </h3>
+                    <p>
+                        
+                        A sample page for landscape photography.
+     </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="content">
+                    <img src="Images/Merlot3.jpg" alt="">
+                    <h3>
+                        <a href="TributeMerlotCat.html">Tribute Page</a>
+                    </h3>
+
+                    <p>
+                        A sample of a tribute page.
+                    </p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="content">
+                    <img src="survey.png" 
+                         alt="">
+                    <h3>
+                        <a href="StudySurvey.html">Study Survey</a>
+                    </h3>
+                    <p>
+                        A sample of an online survey.
+                    </p>
+                </div>
+            </div>
+
+<div class="gallery-item">
+                <div class="content">
+                    <img src="img/blindguardian.jpg" 
+                         alt="">
+                    <h3>
+                        <a href="event.html">Event Page</a>
+                    </h3>
+                    <p>
+                        A sample of an event info page.
+                    </p>
+                </div>
+            </div>
+
+<div class="gallery-item">
+                <div class="content">
+                    <img src="https://cdn.shopify.com/s/files/1/1981/3807/products/Box_6_pastries_2048x.jpg?v=1563292044" 
+                         alt="">
+                    <h3>
+                        <a href="cafeindex.html">Restaurant Page</a>
+                    </h3>
+                    <p>
+                        A sample of a homepage for a business.
+                    </p>
+                </div>
+            </div>
+
+<div class="gallery-item">
+                <div class="content">
+                    <img src="coffeecup.jpg" 
+                         alt="">
+                    <h3>
+                        <a href="parallax.html">Coffee Shop Page</a>
+                    </h3>
+                    <p>
+                        Another sample of a business page.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>

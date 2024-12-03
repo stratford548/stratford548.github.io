@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <!-- Heading Name -->
+    <div class="heading">
+        <h1>Landscape Photography</h1>
+	<hr>
+    </div>
+
+    <!-- Image Gallery section all images in one div -->
+    <div class="gallery">
+        <div class="gallery-item">
+            <img id="myImg" src="beach.jpg" 
+                onclick="openModal('beach.jpg')"
+                alt="Beach Sunrise">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="fog.jpg"
+                onclick="openModal('fog.jpg')"
+                alt="Foggy Lake">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="forest.jpg"
+                onclick="openModal('forest.jpg')"
+                alt="Forest">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="ice.jpg"
+                onclick="openModal('ice.jpg')"
+                alt="Ice">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="lake.jpg"
+                onclick="openModal('lake.jpg')"
+                alt="Lake">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="mountain.jpg"
+                onclick="openModal('mountain.jpg')"
+                alt="Mountain">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="ocean.jpg"
+                onclick="openModal('ocean.jpg')"
+                alt="Ocean">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="river.jpg"
+                onclick="openModal('river.jpg')"
+                alt="River">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="sea.jpg"
+                onclick="openModal('sea.jpg')"
+                alt="Sea">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="snow.jpg"
+                onclick="openModal('snow.jpg')"
+                alt="Snow">
+        </div>
+        <div class="gallery-item">
+            <img id="myImg" src="waterfall.jpg"
+                onclick="openModal('waterfall.jpg')"
+                alt="Waterfall">
+        </div>
+	<div class="gallery-item">
+            <img id="myImg" src="wave.jpg"
+                onclick="openModal('wave.jpg')"
+                alt="Wave">
+        </div>
+	<div class="gallery-item">
+            <img id="myImg" src="beach2.jpg"
+                onclick="openModal('beach2.jpg')"
+                alt="Misty Beach">
+        </div>
+	<div class="gallery-item">
+            <img id="myImg" src="fog2.jpg"
+                onclick="openModal('fog2.jpg')"
+                alt="Morning Mist">
+        </div>
+	<div class="gallery-item">
+            <img id="myImg" src="forest2.jpg"
+                onclick="openModal('forest2.jpg')"
+                alt="Spooky Forest">
+        </div>
+    </div>
+
+    <!-- Modal for Image Display -->
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
+    <!-- JavaScript for Modal -->
+    <script>
+        function openModal(src) {
+            document.getElementById("modalImage").src = src;
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

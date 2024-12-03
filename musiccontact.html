@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>
+        Music Contact Page
+    </title>
+ 
+    <style>
+ 
+        /* Body styling */
+        body {
+            background-image: url('https://cdn-images.audioaddict.com/3/a/9/2/4/f/3a924f810e72a3cfbca188dda0406489.png');
+            font-family: monospace;
+            text-align: center;
+	    
+        }
+ 
+        /* Form styling */
+        form {
+            background-color: #fff;
+	    color: #5d28ff;
+            max-width: 700px;
+            margin: 70px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5); 
+        }
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+ 
+        /* Styling form-control Radio
+        button */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling submit button */
+        button {
+            background-color: powderblue;
+            border: 5px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+  
+<body>
+    <h1>Contact <em>Modern Jazz</em></h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="email"
+                   placeholder="Enter your email" />
+	</div>
+
+	<div class="form-control">
+            <label>
+                Would you like to recieve updates about music and shows?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="select-1">
+                <input type="radio"
+                       id="select-1"
+                       name="select">Yes</input>
+            </label>
+            <label for="select-2">
+                <input type="radio"
+                       id="select-2"
+                       name="select">No</input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="Message">
+                Questions or comments are welcome
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="Message" id="Message">
+            </textarea>
+        </div>
+  
+        <!-- Multi-line Text Input Control -->
+        <button type="submit" value="submit">
+            Submit
+        </button>
+    </form>
+</body>
+</html>
